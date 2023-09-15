@@ -5,7 +5,7 @@ function UserDetails() {
     const {user} =useData()
     const createdAtTimestamp = new Date(user.created_at);
 const year = createdAtTimestamp.getFullYear()
-const month = (createdAtTimestamp.getMonth() + 1).toString().padStart(2, '0'); // Month is zero-based
+const month = (createdAtTimestamp.getMonth() + 1).toString().padStart(2, '0');
 const day = createdAtTimestamp.getDate().toString().padStart(2, '0');
 
 const formattedDate = `${year}-${month}-${day}`;
